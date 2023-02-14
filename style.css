@@ -1,1 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  display: flex;
+}
+
+.logo-box {
+  background-image: url(img/romina-veliz-DGKJzOmjyS4-unsplash.jpg);
+  height: 100vh;
+  width: 70vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+span {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.logo-box p {
+  color: white;
+}
