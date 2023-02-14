@@ -6,3 +6,5 @@ and also to practice using regular expressions more.
 I will also use all the new css theory I have learned including using psuedo
 classes and elements, advanced selectors, css variables, css functions if applicable 
 and all the new properties I have discovered.
+I will also create the form entirely with html and css while trying to avoid javscript
+to really try cement the new knowledge I have gained.
