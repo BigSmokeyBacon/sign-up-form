@@ -9,7 +9,11 @@
   </head>
   <body>
     <div class="logo-box">
-      <p>Photo by Romina Veliz on unsplash</p>
+      <div class="logo"></div>
+      <p class="photo-credit">
+        Photo by <a href="https://unsplash.com/@rominaveliz">Romina Veliz</a> on
+        <a href="https://unsplash.com/">Unsplash</a>
+      </p>
     </div>
 
     <div class="content">
@@ -33,7 +37,12 @@
           <label for="email">Email</label>
           <input type="email" name="email" id="email" />
           <label for="telephone">Phone Number</label>
-          <input type="number" name="telephone" id="telephone" />
+          <input
+            type="text"
+            name="telephone"
+            id="telephone"
+            inputmode="numeric"
+          />
           <input type="text" name="first-name" id="first-name" />
           <label for="password">Password</label>
           <input type="password" name="password" id="password" />
