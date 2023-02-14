@@ -43,3 +43,38 @@ span {
   top: 5%;
   left: 5%;
 }
+
+input,
+button {
+  padding: inherit;
+  margin: inherit;
+}
+
+input {
+  /* border: 2px solid black; */
+  /* border: none; */
+  padding: 20px;
+  border: 10px solid gray;
+}
+
+button {
+  padding: 5px 20px;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+input:focus {
+  /* border-color: purple; */
+  border: 5px solid hotpink;
+  box-shadow: 2px 5px 20px 2px rgb(0, 0, 0, 0.1);
+}
+
+/* input:active {
+  border: none;
+} */
+/* input:valid {
+  border-color: green;
+} */
