@@ -54,6 +54,7 @@ span {
   margin-bottom: 10px;
   width: 100%;
   text-align: center;
+  font-size: 1rem;
 }
 
 .logo {
@@ -115,16 +116,22 @@ input:focus {
   display: grid;
   align-items: center;
   height: 250px;
+  grid-auto-rows: 110px;
   grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 50px;
+}
+.outer-input {
+  box-shadow: 2px 5px 20px 2px rgb(0, 0, 0, 0.1);
   background-color: white;
   margin-left: -40px;
   padding-left: 40px;
-  box-shadow: 2px 5px 20px 2px rgb(0, 0, 0, 0.1);
-  margin-bottom: 50px;
+  font-size: 1.4rem;
 }
 
-legend {
-  align-self: start;
+.outer-input .legend {
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding-top: 20px;
 }
 
 a {
