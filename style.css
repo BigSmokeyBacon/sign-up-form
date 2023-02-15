@@ -112,6 +112,7 @@ input:focus {
   background-color: white;
   margin-left: -40px;
   padding-left: 40px;
+  box-shadow: 2px 5px 20px 2px rgb(0, 0, 0, 0.1);
 }
 
 legend {
