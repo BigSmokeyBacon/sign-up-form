@@ -1,6 +1,11 @@
+@font-face {
+  font-family: quicksand;
+  src: url(Quicksand-VariableFont_wght.ttf);
+}
+
 :root {
   --main-color: rgb(26, 121, 243);
-  --sub-color: rgb(196, 242, 255);
+  --font-color: rgb(32, 33, 40);
 }
 
 * {
@@ -9,17 +14,30 @@
 }
 
 body {
-  display: flex;
+  font-family: quicksand, sans-serif;
+  font-size: 1.2rem;
+  color: var(--font-color);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: 40px;
+  background-color: rgb(220 234 238);
 }
 
 .logo-box {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   background-image: url(img/romina-veliz-DGKJzOmjyS4-unsplash.jpg);
-  height: 100vh;
-  width: 70vw;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
 }
 
 span {
@@ -28,45 +46,51 @@ span {
 }
 
 .photo-credit {
-  left: 17%;
-  bottom: 2%;
-  position: absolute;
   color: white;
-}
-
-.dj-pic {
-  /* height: 20rem; */
-  background-color: #000;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 .logo {
+  margin-top: 40px;
   background-image: url(img/logo.png);
   height: 200px;
-  width: 200px;
+  width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
-  top: 5%;
-  left: 5%;
+  order: -1;
+  background-position: center;
 }
 
 input,
 button {
   padding: inherit;
   margin: inherit;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 input {
-  display: flex;
-  flex-direction: column;
+  border-radius: 5px;
+  border: 2px solid rgba(32, 33, 40, 0.271);
+  width: 250px;
 }
 
 button[type="submit"] {
   background-color: var(--main-color);
   color: white;
-  padding: 15px 45px;
+  padding: 10px 30px;
   border-radius: 20px;
   border: none;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
 
 button:hover {
@@ -75,7 +99,7 @@ button:hover {
 }
 
 input:focus {
-  border: 2px solid hotpink;
+  border: 2px solid rgba(26, 120, 243, 0.542);
   outline: none;
   box-shadow: 2px 5px 20px 2px rgb(0, 0, 0, 0.1);
 }
@@ -83,9 +107,11 @@ input:focus {
 .input-grid {
   display: grid;
   align-items: center;
-  height: 300px;
-  border: 2px solid darkgray;
+  height: 250px;
   grid-template-columns: repeat(3, 1fr);
+  background-color: white;
+  margin-left: -40px;
+  padding-left: 40px;
 }
 
 legend {
@@ -95,6 +121,35 @@ legend {
 button[type="submit"],
 .footer,
 .input-grid {
-  /* margin-left: 30px; */
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login-text a {
+  color: var(--main-color);
+}
+
+.login-text a:hover {
+  color: rgb(21, 79, 160);
+}
+
+.photo-credit a {
+  color: white;
+}
+
+.hero-text {
+  padding-top: 50px;
+}
+
+label {
+  font-size: 1.4rem;
+  color: #434655;
+}
+
+input::placeholder {
+  font-size: 0.8rem;
+  padding-left: 5px;
 }
