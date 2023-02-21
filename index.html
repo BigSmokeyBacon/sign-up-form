@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <div class="logo-box">
-        <div class="logo"></div>
+        <div class="logo">Dj City!</div>
         <p class="photo-credit">
           Photo by
           <a href="https://unsplash.com/@rominaveliz">Romina Veliz</a> on
@@ -35,30 +35,38 @@
               <div class="input-grid">
                 <!-- <legend>Let's Do This!</legend> -->
                 <div class="inputs">
-                  <label for="first-name">First Name</label>
+                  <label for="first-name">First Name *</label>
                   <input
                     type="text"
                     name="first-name"
                     id="first-name"
-                    placeholder="First Name"
+                    placeholder="First Name *"
+                    pattern="[^\d]+"
+                    title="Please don't enter any digits or special characters"
+                    required
                   />
                 </div>
                 <div class="inputs">
-                  <label for="last-name">Last Name</label>
+                  <label for="last-name">Last Name *</label>
                   <input
                     type="text"
                     name="last-name"
                     id="last-name"
-                    placeholder="Last Name"
+                    placeholder="Last Name *"
+                    pattern="[^\d]+"
+                    title="Please don't enter any numeric or special characters"
+                    required
                   />
                 </div>
                 <div class="inputs">
-                  <label for="email">Email</label>
+                  <label for="email">Email *</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Email"
+                    placeholder="Email *"
+                    title="Must contain '@' and '.'"
+                    required
                   />
                 </div>
                 <div class="inputs">
@@ -69,24 +77,28 @@
                     id="telephone"
                     inputmode="numeric"
                     placeholder="Phone Number"
+                    pattern="(\+{1})?([\d]*)"
+                    title="Please enter only numeric characters or a '+' symbol at the start"
                   />
                 </div>
                 <div class="inputs">
-                  <label for="password">Password</label>
+                  <label for="password">Password *</label>
                   <input
                     type="password"
                     name="password"
                     id="password"
-                    placeholder="Password"
+                    placeholder="Password *"
+                    required
                   />
                 </div>
                 <div class="inputs">
-                  <label for="confirm-password">Confirm Password</label>
+                  <label for="confirm-password">Confirm Password *</label>
                   <input
                     type="password"
                     name="confirm-password"
                     id="confirm-password"
-                    placeholder="Confirm Password"
+                    placeholder="Confirm Password *"
+                    required
                   />
                 </div>
               </div>

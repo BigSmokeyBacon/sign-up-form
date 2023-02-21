@@ -58,14 +58,19 @@ span {
 }
 
 .logo {
-  margin-top: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  margin-top: 100px;
   background-image: url(img/logo.png);
-  height: 200px;
+  height: 100px;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: left;
   order: -1;
-  background-position: center;
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 input,
@@ -104,12 +109,6 @@ button[type="submit"] {
 button:hover {
   background-color: rgb(24, 97, 199);
   box-shadow: 1px 5px 10px rgb(0, 0, 0, 0.1);
-}
-
-input:focus {
-  border: 2px solid rgba(26, 120, 243, 0.542);
-  outline: none;
-  box-shadow: 2px 5px 20px 2px rgb(0, 0, 0, 0.1);
 }
 
 .input-grid {
@@ -162,4 +161,18 @@ label {
 input::placeholder {
   font-size: 0.8rem;
   padding-left: 5px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0px 2px 5px rgb(0 0 0 / 15%);
+}
+
+input:valid:focus {
+  border-color: rgb(71, 214, 35);
+  border: 2px solid rgba(26, 120, 243, 0.542);
+}
+
+input:invalid:focus {
+  border: 2px solid red;
 }
